@@ -9,6 +9,34 @@
 
 ---
 
+## ⚠️ 关于本项目：全程由 AI 开发
+
+**这个仓库的每一行代码、每一份脚本、这份 README，全部由 AI 编写。**
+
+| 角色 | 谁 |
+|---|---|
+| 需求方 / 验收 | 人（提出功能需求、真机测试、反馈问题） |
+| 设计 / 编码 / 构建 / 调试 | AI Agent（Hermes，跑在本地 NAS 上的容器里） |
+
+人没有手写过一行 Java、没开过 Android Studio、没敲过一条构建命令。
+迭代过程是「提需求 → AI 改代码 → 出 APK → 真机试 → 再提需求」的循环，
+共 8 个版本（v1.6 → v2.8）在一天内完成。
+
+**为什么写这段**：这个项目是「AI 能不能独立完成一个真实工程」的一个样本 ——
+包括一开始踩的坑（SDK 下载被墙、`resources.arsc` 对齐、`javac -source 8` 不认 lambda）
+都是 AI 自己查出来、自己修的。把它标出来，是因为诚实比好看重要。
+
+提交记录里的 `Blackstone <blackstone@local>` 就是那个 AI Agent 的身份。
+
+---
+
+## 下载
+
+成品 APK 见右侧 [Releases](https://github.com/kar-liang/ModemTest/releases)，
+或直接取仓库内 [`releases/`](releases/) 目录。
+
+---
+
 ## 功能
 
 ### 1. 自动拨号
@@ -77,6 +105,7 @@ python3 make_icon.py     # 输出 mdpi ~ xxxhdpi 五个密度
 ├── AndroidManifest.xml
 ├── build.sh                 一键构建（含对齐/签名/自检）
 ├── make_icon.py             图标生成器
+├── LICENSE                  MIT
 ├── src/com/example/modemtest/
 │   ├── MainActivity.java    UI + 拨号调度 + ping
 │   └── HangupService.java   无障碍挂断服务
@@ -110,4 +139,8 @@ python3 make_icon.py     # 输出 mdpi ~ xxxhdpi 五个密度
 | v2.0 | 移除「切换网络模式」 |
 | v1.6 | 双卡绑定轮流（SIM1→号码1、SIM2→号码2） |
 
-License: MIT
+---
+
+## License
+
+[MIT](LICENSE)

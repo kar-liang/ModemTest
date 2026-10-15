@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibility_desc">允许 ModemTest 在通话界面自动点击「挂断」按钮，实现定时自动挂断。不收集任何信息。</string>
+</resources>

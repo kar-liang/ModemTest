@@ -1,0 +1,35 @@
+# 构建产物
+out/
+*.apk.tmp
+build_log.txt
+build_ok.txt
+apkinfo.txt
+align_check.txt
+arsc_check.txt
+check.txt
+verify.txt
+diag.txt
+zc.txt
+final.txt
+
+# SDK 组件（体积大，不进仓库）
+*.zip
+platform-*.zip
+build-tools*.zip
+cmdtools.zip
+platform-tools*.zip
+
+# keystore / 签名（私密，不要提交）
+*.keystore
+*.jks
+debug.keystore
+
+# 临时脚本
+_*.sh
+
+# 系统/编辑器
+.DS_Store
+.idea/
+*.iml
+gen/
+classes/
